@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: url("../fonts/cairo/CairoFont.ttf");
+    font-family: 'Cairo', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    /* padding: 5px; */
+    color: #fff;
+}
+ul, ol {
+    list-style: none;
+    padding: 0 ;
+    /* padding-left: 10px; */
+}
+
+ul li, ol li {
+    display: block;
+}
+
+.sidebar {
+
+    /* background-color: #1c2f38; */
+    padding: 15px 0;
+    color: white;
+    font-size: 14px;
+}
+
+.sidebar .accordion-item .item-heading{
+
+    padding-left: 5px;
+}
+
+.sidebar-container {
+
+    background-color: #1c2f38;
+    min-height: 100vh;
+}
+
+.sidebar .accordion-item,
+.sidebar .accordion-item .accordion-button {
+
+    background-color: unset !important;
+    border: unset;
+    color: #fff;
+    padding: 10px;
+}
+
+.sidebar .accordion-item:hover .item-heading {
+
+    color: #80c4fc;
+}
+
+.sidebar .accordion-item .accordion-button {
+    padding: 0;
+    outline: none !important;
+}
+
+.sidebar .accordion-item .accordion-button::after {
+    all: unset;
+}
+
+.sidebar .accordion-item .accordion-button > span.plus {
+
+    color: #fff;
+    position: absolute;
+    right: 10px;
+}
+.sidebar .accordion-body {
+
+    padding: 5px 5px 5px 20px;
+}
+.sidebar .accordion-body a {
+
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+
+}
+
+.sidebar .accordion-body a:hover {
+
+    background-color: #2d4d5c;
+    cursor: pointer;
+}
+
+
+
+
+/* Toolbar */
+
+.toolbar {
+
+    background-color: #ccc;
+    /* padding: 10px 0; */
+}
+
+
+/* Quik Info Widgets */
+
+.info-widgets .widget {
+
+    height: 150px;
+    flex-direction: column;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+}
+
+
+.info-widgets .widget > div{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-widgets div .widget:first-of-type {
+
+    background-color: rgba(54, 162, 235);
+}
+
+
+.info-widgets  div:nth-of-type(2) .widget{
+
+    background-color: rgba(255, 206, 86);
+
+}
+
+.info-widgets div:nth-of-type(3) .widget {
+    
+    background-color: rgba(153, 102, 255);
+    
+}
+.info-widgets div:nth-of-type(4) .widget {
+    
+    background-color: rgba(255, 99, 132);
+    
+}
+
+/* Services Widgets */
+.services-widgets .col-6 {
+
+    padding: 10px;
+}
+.services-widgets .widget {
+
+    height: 100px;
+    flex-direction: column;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+}
+
+.services-widgets div:first-of-type .widget {
+
+    background-color: #2196f3;
+}
+
+
+.services-widgets  div:nth-of-type(2) .widget{
+
+    background-color: #8bc34a;
+
+}
+
+.services-widgets div:nth-of-type(3) .widget {
+
+    background-color: #ff9800;
+
+}
+.services-widgets div:nth-of-type(4) .widget {
+
+    background-color: #4caf50;
+
+}
+.services-widgets div:nth-of-type(5) .widget {
+
+    background-color: rgba(153, 102, 255);
+
+}
+
+.info-widgets div .widget:hover,
+.services-widgets div .widget:hover {
+    cursor: pointer;
+    background-color: #2e363f;
+}
+
+
+/* 
+******************
+* Printing Reports
+****************** 
+*/
+
+@media print{
+    body * {
+        visibility: hidden;
+    }
+
+    #report {
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #report * {
+        visibility: visible;
+    }
+}
