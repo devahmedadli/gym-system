@@ -8,5 +8,5 @@
 (the project database is named <b>gym-database.sql</b> in the extracted files
 After Importing Database, you can access the project via <b>http://localhost:8000/</b></br>
 the username: ahmednasser</br>
-    password: 12345
+    password: 12345</br>
 Enjoy ❤
